@@ -1,0 +1,28 @@
+syntax on
+highlight CursorLine cterm=NONE ctermbg=237
+highlight CursorColumn cterm=NONE ctermbg=237
+highlight SpecialKey ctermfg=8
+
+set list
+set listchars=tab:——,trail:·
+
+set cursorline
+set cursorcolumn
+
+set t_Co=256
+set background=dark
+
+set ruler
+set number
+set hlsearch
+set showmatch
+
+set viminfo=
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+
+set backspace=indent,eol,start
+
+ab raw set nonu
+ab noraw set nu
