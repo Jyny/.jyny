@@ -5,3 +5,6 @@
 
 ## tmux settings
 	ln -s ~/.jyny/tmux/tmux.conf ~/.tmux.conf
+
+## zsh settings
+	ln -s ~/.jyny/zsh/zshrc ~/.zshrc
