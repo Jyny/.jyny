@@ -56,6 +56,7 @@ plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+SAVEHIST=0
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
