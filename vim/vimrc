@@ -3,6 +3,8 @@ highlight CursorLine cterm=NONE ctermbg=237
 highlight CursorColumn cterm=NONE ctermbg=237
 highlight SpecialKey ctermfg=8
 
+set enc=utf8
+
 set list
 set listchars=tab:——,trail:·
 
