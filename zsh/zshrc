@@ -85,6 +85,6 @@ SAVEHIST=0
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-function ida() { wine ~/.wine/drive_c/Program\ Files/IDA\ 6.8/idaq.exe $@ > /tmp/ida.log 2>&1 &; }
-function ida64() { wine ~/.wine/drive_c/Program\ Files/IDA\ 6.8/idaq64.exe $@ > /tmp/ida.log 2>&1 &; }
+#function ida() { wine ~/.wine/drive_c/Program\ Files/IDA\ 6.8/idaq.exe $@ > /tmp/ida.log 2>&1 &; }
+#function ida64() { wine ~/.wine/drive_c/Program\ Files/IDA\ 6.8/idaq64.exe $@ > /tmp/ida.log 2>&1 &; }
 
