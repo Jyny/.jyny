@@ -23,6 +23,7 @@ set viminfo=
 set tabstop=4
 set shiftwidth=4
 set noexpandtab
+set clipboard=unnamed
 
 set backspace=indent,eol,start
 
