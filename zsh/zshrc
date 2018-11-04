@@ -75,6 +75,8 @@ SAVEHIST=0
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
+export GOPATH="$HOME/.go"
+export PATH=$PATH:$GOPATH/bin
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -85,8 +87,5 @@ SAVEHIST=0
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#function ida() { wine ~/.wine/drive_c/Program\ Files/IDA\ 6.8/idaq.exe $@ > /tmp/ida.log 2>&1 &; }
-#function ida64() { wine ~/.wine/drive_c/Program\ Files/IDA\ 6.8/idaq64.exe $@ > /tmp/ida.log 2>&1 &; }
+function jtmux() { tmux new-session -c ~/Downloads 'tmux new-window -c ~/Workspace; tmux new-window -c /tmp; tmux new-window -c /tmp;'}
 
-export GOPATH="$HOME/.go"
-export PATH=$PATH:$GOPATH/bin
