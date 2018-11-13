@@ -75,7 +75,7 @@ SAVEHIST=0
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
-export GOPATH="$HOME/.go"
+export GOPATH="$HOME/.GOPATH"
 export PATH=$PATH:$GOPATH/bin
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
