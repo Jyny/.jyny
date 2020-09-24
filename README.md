@@ -1,5 +1,8 @@
 # Installation
 
+## git settings
+	ln -s ~/.jyny/git/gitconfig ~/.gitconfig
+
 ## vim settings
 	ln -s ~/.jyny/vim/vimrc ~/.vimrc
 

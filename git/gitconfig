@@ -1,0 +1,9 @@
+[user]
+	name = Jyny C.Y. Chen
+	email = cychener@gmail.com
+
+[merge]
+	tool = vimdiff
+
+[alias]
+	dag = log --decorate --abbrev-commit --graph
