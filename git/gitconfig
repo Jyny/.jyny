@@ -7,3 +7,6 @@
 
 [alias]
 	dag = log --decorate --abbrev-commit --graph
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
