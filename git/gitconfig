@@ -1,6 +1,6 @@
 [user]
 	name = Jerry Y. Chen
-	email = me@jyny.dev
+	email = chen@jyny.dev
 
 [merge]
 	tool = vimdiff
