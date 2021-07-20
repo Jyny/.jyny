@@ -11,3 +11,6 @@
 
 ## zsh settings
 	ln -s ~/.jyny/zsh/zshrc ~/.zshrc
+
+## htop settings
+	ln -s ~/.jyny/htop/htoprc ~/.config/htop/htoprc
