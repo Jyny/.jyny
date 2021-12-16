@@ -78,7 +78,7 @@ source $ZSH/oh-my-zsh.sh
 SAVEHIST=0
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export GOPATH="$HOME/.GOPATH"
+export GOPATH="$HOME/.go"
 export PATH=$PATH:$GOPATH/bin
 
 # You may need to manually set your language environment
