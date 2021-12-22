@@ -8,5 +8,17 @@
 [alias]
 	dag = log --decorate --abbrev-commit --graph
 
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	defaultKeyCommand = ssh-add -L
+
+[commit]
+	gpgSign = true
+
+[tag]
+	gpgSign = true
+
 [url "git@github.com:"]
 	insteadOf = https://github.com/
