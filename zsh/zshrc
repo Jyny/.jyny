@@ -76,6 +76,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 SAVEHIST=0
+export LESSHISTFILE=-
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH="$HOME/.go"
