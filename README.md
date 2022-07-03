@@ -15,3 +15,7 @@
 
 ## htop settings
 	ln -s ~/.jyny/htop/htoprc ~/.config/htop/htoprc
+
+## ssh-agnet
+	ln -s ~/.jyny/ssh-agent/ssh-agent.service ~/.config/systemd/user/ssh-agent.service
+	systemctl enable --now --user ssh-agent
