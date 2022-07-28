@@ -18,4 +18,4 @@ PROMPT+='$(git_prompt_info)%{$reset_color%}'
 PROMPT+='
 $(prompt_char) '
 
-RPROMPT='%{$(echotc UP 1)%}%{$fg[cyan]%}%*%{$(echotc DO 1)%}'
+RPROMPT='%{$(echotc UP 1)%}%{$fg[cyan]%}%*%{$reset_color%}%{$(echotc DO 1)%}'
