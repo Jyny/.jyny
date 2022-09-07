@@ -195,21 +195,21 @@
 		<key>$F707</key>
 		<string>[1;2S</string>
 		<key>$F708</key>
-		<string>[15;2~</string>
+		<string>[25~</string>
 		<key>$F709</key>
-		<string>[17;2~</string>
+		<string>[26~</string>
 		<key>$F70A</key>
-		<string>[18;2~</string>
+		<string>[28~</string>
 		<key>$F70B</key>
-		<string>[19;2~</string>
+		<string>[29~</string>
 		<key>$F70C</key>
-		<string>[20;2~</string>
+		<string>[31~</string>
 		<key>$F70D</key>
-		<string>[21;2~</string>
+		<string>[32~</string>
 		<key>$F70E</key>
-		<string>[23;2~</string>
+		<string>[33~</string>
 		<key>$F70F</key>
-		<string>[24;2~</string>
+		<string>[34~</string>
 		<key>$F728</key>
 		<string>[3;2~</string>
 		<key>$F729</key>
@@ -220,14 +220,6 @@
 		<string>[5;2~</string>
 		<key>$F72D</key>
 		<string>[6;2~</string>
-		<key>F700</key>
-		<string>[A</string>
-		<key>F701</key>
-		<string>[B</string>
-		<key>F702</key>
-		<string>[D</string>
-		<key>F703</key>
-		<string>[C</string>
 		<key>F704</key>
 		<string>OP</string>
 		<key>F705</key>
@@ -252,6 +244,22 @@
 		<string>[23~</string>
 		<key>F70F</key>
 		<string>[24~</string>
+		<key>F710</key>
+		<string>[25~</string>
+		<key>F711</key>
+		<string>[26~</string>
+		<key>F712</key>
+		<string>[28~</string>
+		<key>F713</key>
+		<string>[29~</string>
+		<key>F714</key>
+		<string>[31~</string>
+		<key>F715</key>
+		<string>[32~</string>
+		<key>F716</key>
+		<string>[33~</string>
+		<key>F717</key>
+		<string>[34~</string>
 		<key>F728</key>
 		<string>[3~</string>
 		<key>F729</key>
@@ -393,33 +401,39 @@
 		<key>~F701</key>
 		<string>[1;3B</string>
 		<key>~F702</key>
-		<string>[1;3D</string>
+		<string>b</string>
 		<key>~F703</key>
-		<string>[1;3C</string>
+		<string>f</string>
 		<key>~F704</key>
-		<string>[1;3P</string>
+		<string>[17~</string>
 		<key>~F705</key>
-		<string>[1;3Q</string>
+		<string>[18~</string>
 		<key>~F706</key>
-		<string>[1;3R</string>
+		<string>[19~</string>
 		<key>~F707</key>
-		<string>[1;3S</string>
+		<string>[20~</string>
 		<key>~F708</key>
-		<string>[15;3~</string>
+		<string>[21~</string>
 		<key>~F709</key>
-		<string>[17;3~</string>
+		<string>[23~</string>
 		<key>~F70A</key>
-		<string>[18;3~</string>
+		<string>[24~</string>
 		<key>~F70B</key>
-		<string>[19;3~</string>
+		<string>[25~</string>
 		<key>~F70C</key>
-		<string>[20;3~</string>
+		<string>[26~</string>
 		<key>~F70D</key>
-		<string>[21;3~</string>
+		<string>[28~</string>
 		<key>~F70E</key>
-		<string>[23;3~</string>
+		<string>[29~</string>
 		<key>~F70F</key>
-		<string>[24;3~</string>
+		<string>[31~</string>
+		<key>~F710</key>
+		<string>[32~</string>
+		<key>~F711</key>
+		<string>[33~</string>
+		<key>~F712</key>
+		<string>[34~</string>
 		<key>~F728</key>
 		<string>[3;3~</string>
 		<key>~F729</key>
@@ -505,7 +519,7 @@
 		<key>~^F70F</key>
 		<string>[24;7~</string>
 		<key>~^F728</key>
-		<string>[3;7~</string>
+		<string>[3;5~</string>
 		<key>~^F729</key>
 		<string>[1;7H</string>
 		<key>~^F72B</key>
@@ -514,112 +528,6 @@
 		<string>[5;7~</string>
 		<key>~^F72D</key>
 		<string>[6;7~</string>
-		<key>$F702</key>
-		<string>[1;2D</string>
-		<key>$F703</key>
-		<string>[1;2C</string>
-		<key>$F708</key>
-		<string>[25~</string>
-		<key>$F709</key>
-		<string>[26~</string>
-		<key>$F70A</key>
-		<string>[28~</string>
-		<key>$F70B</key>
-		<string>[29~</string>
-		<key>$F70C</key>
-		<string>[31~</string>
-		<key>$F70D</key>
-		<string>[32~</string>
-		<key>$F70E</key>
-		<string>[33~</string>
-		<key>$F70F</key>
-		<string>[34~</string>
-		<key>$F728</key>
-		<string>[3;2~</string>
-		<key>F704</key>
-		<string>OP</string>
-		<key>F705</key>
-		<string>OQ</string>
-		<key>F706</key>
-		<string>OR</string>
-		<key>F707</key>
-		<string>OS</string>
-		<key>F708</key>
-		<string>[15~</string>
-		<key>F709</key>
-		<string>[17~</string>
-		<key>F70A</key>
-		<string>[18~</string>
-		<key>F70B</key>
-		<string>[19~</string>
-		<key>F70C</key>
-		<string>[20~</string>
-		<key>F70D</key>
-		<string>[21~</string>
-		<key>F70E</key>
-		<string>[23~</string>
-		<key>F70F</key>
-		<string>[24~</string>
-		<key>F710</key>
-		<string>[25~</string>
-		<key>F711</key>
-		<string>[26~</string>
-		<key>F712</key>
-		<string>[28~</string>
-		<key>F713</key>
-		<string>[29~</string>
-		<key>F714</key>
-		<string>[31~</string>
-		<key>F715</key>
-		<string>[32~</string>
-		<key>F716</key>
-		<string>[33~</string>
-		<key>F717</key>
-		<string>[34~</string>
-		<key>F728</key>
-		<string>[3~</string>
-		<key>^F702</key>
-		<string>[1;5D</string>
-		<key>^F703</key>
-		<string>[1;5C</string>
-		<key>^F728</key>
-		<string>[3;5~</string>
-		<key>~F702</key>
-		<string>b</string>
-		<key>~F703</key>
-		<string>f</string>
-		<key>~F704</key>
-		<string>[17~</string>
-		<key>~F705</key>
-		<string>[18~</string>
-		<key>~F706</key>
-		<string>[19~</string>
-		<key>~F707</key>
-		<string>[20~</string>
-		<key>~F708</key>
-		<string>[21~</string>
-		<key>~F709</key>
-		<string>[23~</string>
-		<key>~F70A</key>
-		<string>[24~</string>
-		<key>~F70B</key>
-		<string>[25~</string>
-		<key>~F70C</key>
-		<string>[26~</string>
-		<key>~F70D</key>
-		<string>[28~</string>
-		<key>~F70E</key>
-		<string>[29~</string>
-		<key>~F70F</key>
-		<string>[31~</string>
-		<key>~F710</key>
-		<string>[32~</string>
-		<key>~F711</key>
-		<string>[33~</string>
-		<key>~F712</key>
-		<string>[34~</string>
-		<key>~^F728</key>
-		<string>[3;5~</string>
 	</dict>
 	<key>name</key>
 	<string>jyny</string>
