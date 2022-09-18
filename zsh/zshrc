@@ -74,6 +74,7 @@ ZSH_THEME="dstj"
 plugins=(zsh-syntax-highlighting git docker kubectl golang)
 
 source $ZSH/oh-my-zsh.sh
+eval `keychain --quiet --eval --inherit any-once`
 
 # User configuration
 SAVEHIST=0
