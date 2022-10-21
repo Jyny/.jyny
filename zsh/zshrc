@@ -71,10 +71,19 @@ ZSH_THEME="dstj"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-syntax-highlighting git docker kubectl golang)
+plugins=(git
+zsh-syntax-highlighting
+docker
+kubectl
+golang
+)
 
 source $ZSH/oh-my-zsh.sh
-eval `keychain --quiet --eval --inherit any-once`
+fpath=(
+  /usr/local/share/zsh-completions
+  /usr/local/share/zsh/site-functions
+  $fpath
+)
 
 # User configuration
 SAVEHIST=0
@@ -89,6 +98,7 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -100,12 +110,6 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-fpath=(
-  /usr/local/share/zsh-completions
-  /usr/local/share/zsh/site-functions
-  $fpath
-)
-
 function jtmux() {
 	tmux new-session -d -c ~/Downloads
 	tmux new-window -d -c ~/Workspace
@@ -115,3 +119,5 @@ function jtmux() {
 	tmux attach
 }
 
+# User commands
+eval `keychain --quiet --eval --inherit any-once`
