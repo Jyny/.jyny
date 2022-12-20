@@ -2,6 +2,9 @@
 	name = Jerry Y. Chen
 	email = chen@jyny.dev
 
+[init]
+	defaultBranch = main
+
 [merge]
 	tool = vimdiff
 
