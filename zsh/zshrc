@@ -72,10 +72,11 @@ ZSH_THEME="dstj"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
+golang
 zsh-syntax-highlighting
 docker
 kubectl
-golang
+minikube
 )
 
 source $ZSH/oh-my-zsh.sh
