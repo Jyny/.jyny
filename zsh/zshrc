@@ -93,6 +93,7 @@ export LESSHISTFILE=-
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH="$HOME/.go"
 export PATH=$PATH:$GOPATH/bin
+export PATH="${PATH}:${HOME}/.cargo/bin"
 export PATH="${PATH}:${HOME}/.krew/bin"
 
 # You may need to manually set your language environment
