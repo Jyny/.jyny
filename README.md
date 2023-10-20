@@ -2,6 +2,7 @@
 
 ## git settings
 	ln -s ~/.jyny/git/gitconfig ~/.gitconfig
+	ln -s ~/.jyny/git/gitignore_global ~/.gitignore_global
 
 ## vim settings
 	ln -s ~/.jyny/vim/vimrc ~/.vimrc

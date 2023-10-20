@@ -1,3 +1,6 @@
+[core]
+	excludesfile = /Users/jyny/.gitignore_global
+
 [user]
 	name = Jerry Y. Chen
 	email = chen@jyny.dev
