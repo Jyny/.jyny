@@ -16,3 +16,15 @@
 
 ## htop settings
 	ln -s ~/.jyny/htop/htoprc ~/.config/htop/htoprc
+
+## vscode
+
+### settings
+	ln -s ~/.jyny/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+	New-Item -ItemType SymbolicLink -Path "~/.jyny/vscode/settings.json" -Target "%APPDATA%\Code\User\settings.json"
+
+### extensions
+	code --list-extensions > ~/.jyny/vscode/extensions.list
+
+	cat ~/.jyny/vscode/extensions.list | xargs -L 1 echo code --install-extension
+	cat ~/.jyny/vscode/extensions.list | % { "code --install-extension $_" }

@@ -1,0 +1,45 @@
+{
+    // remote host
+    "remote.SSH.remotePlatform": {
+        "wx": "windows",
+        "dx": "linux"
+    },
+
+    // behavior
+    "security.workspace.trust.startupPrompt": "never",
+    "workbench.startupEditor": "none",
+    "window.confirmBeforeClose": "keyboardOnly",
+    "extensions.ignoreRecommendations": true,
+    
+    // sync
+    "settingsSync.ignoredExtensions": [],
+    "settingsSync.ignoredSettings": [],
+
+    // editor
+    "diffEditor.renderSideBySide": false,
+    "editor.cursorBlinking": "smooth",
+    
+    // completion
+    "editor.suggest.preview": true,
+    "editor.quickSuggestionsDelay": 0,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": "true",
+        "markdown": "true",
+        "scminput": false
+    },
+
+    // c/c++
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c17",
+
+    // telemetry
+    "redhat.telemetry.enabled": false,
+    "telemetry.telemetryLevel": "off",
+    "gitlens.telemetry.enabled": false,
+
+    // others
+    "makefile.configureOnOpen": false,
+    "githubPullRequests.pullBranch": "never",
+}
