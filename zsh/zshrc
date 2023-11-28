@@ -93,6 +93,7 @@ SAVEHIST=0
 export LESSHISTFILE=-
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/opt/homebrew/bin:$PATH"
 export GOPATH="$HOME/.go"
 export PATH=$PATH:$GOPATH/bin
 export PATH="${PATH}:${HOME}/.cargo/bin"
