@@ -81,12 +81,13 @@ kubectl
 minikube
 )
 
-source $ZSH/oh-my-zsh.sh
 fpath=(
   /usr/local/share/zsh-completions
   /usr/local/share/zsh/site-functions
+  /opt/homebrew/share/zsh/site-functions
   $fpath
 )
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 SAVEHIST=0
