@@ -83,10 +83,10 @@ minikube
 )
 
 fpath=(
+  $fpath
   /usr/local/share/zsh-completions
   /usr/local/share/zsh/site-functions
   /opt/homebrew/share/zsh/site-functions
-  $fpath
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -95,11 +95,13 @@ SAVEHIST=0
 export LESSHISTFILE=-
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/opt/homebrew/bin:$PATH"
 export GOPATH="$HOME/.go"
-export PATH=$PATH:$GOPATH/bin
-export PATH="${PATH}:${HOME}/.cargo/bin"
-export PATH="${PATH}:${HOME}/.krew/bin"
+
+# export PATH="$PATH"
+export PATH="$PATH:/opt/homebrew/bin"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.krew/bin"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -118,6 +120,8 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# User commands
 function jtmux() {
 	tmux new-session -d -c ~/Downloads
 	tmux new-window -d -c ~/Workspace
@@ -127,5 +131,5 @@ function jtmux() {
 	tmux attach
 }
 
-# User commands
+# manage ssh-agent and gpg-agent
 eval `keychain --quiet --eval --inherit any-once`
