@@ -95,11 +95,13 @@ SAVEHIST=0
 export LESSHISTFILE=-
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/opt/homebrew/bin:$PATH"
 export GOPATH="$HOME/.go"
-export PATH=$PATH:$GOPATH/bin
-export PATH="${PATH}:${HOME}/.cargo/bin"
-export PATH="${PATH}:${HOME}/.krew/bin"
+
+# export PATH="$PATH"
+export PATH="$PATH:/opt/homebrew/bin"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.krew/bin"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
