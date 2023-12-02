@@ -120,6 +120,8 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# User commands
 function jtmux() {
 	tmux new-session -d -c ~/Downloads
 	tmux new-window -d -c ~/Workspace
@@ -129,5 +131,5 @@ function jtmux() {
 	tmux attach
 }
 
-# User commands
+# manage ssh-agent and gpg-agent
 eval `keychain --quiet --eval --inherit any-once`
