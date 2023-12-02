@@ -83,10 +83,10 @@ minikube
 )
 
 fpath=(
+  $fpath
   /usr/local/share/zsh-completions
   /usr/local/share/zsh/site-functions
   /opt/homebrew/share/zsh/site-functions
-  $fpath
 )
 source $ZSH/oh-my-zsh.sh
 
