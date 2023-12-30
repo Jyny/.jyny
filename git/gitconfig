@@ -1,9 +1,8 @@
 [core]
-	excludesfile = /Users/jyny/.gitignore_global
+	excludesfile = ~/.gitignore_global
 
-[user]
-	name = Jerry Y. Chen
-	email = chen@jyny.dev
+[include]
+    path = ~/.gituser
 
 [init]
 	defaultBranch = main
@@ -13,6 +12,10 @@
 
 [alias]
 	dag = log --decorate --abbrev-commit --graph
+	author = "![ -n \"$(git config user.name)\" ] \
+			&& [ -n \"$(git config user.email)\" ] \
+			&& printf '%s <%s>\n' \"$(git config user.name)\" \"$(git config user.email)\" \
+			|| (echo 'git: author identity unknown' && exit 1)"
 
 [gpg]
 	format = ssh
