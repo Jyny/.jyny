@@ -1,7 +1,13 @@
 [core]
 	excludesfile = ~/.gitignore_global
 
+[user]
+	# disabled by override in ~/.gituser
+	name =
+	email =
+
 [include]
+	# override user.name and user.email
     path = ~/.gituser
 
 [init]
