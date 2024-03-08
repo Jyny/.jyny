@@ -28,5 +28,5 @@
 ### extensions
 	code --list-extensions > ~/.jyny/vscode/extensions.list
 
-	cat ~/.jyny/vscode/extensions.list | xargs -L 1 echo code --install-extension
+	cat ~/.jyny/vscode/extensions.list | xargs -L 1 code --install-extension
 	cat ~/.jyny/vscode/extensions.list | % { "code --install-extension $_" }
