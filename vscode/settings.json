@@ -18,11 +18,13 @@
     // editor
     "diffEditor.renderSideBySide": false,
     "editor.cursorBlinking": "smooth",
+    "editor.accessibilitySupport": "off",
     
     // completion
     "editor.suggest.preview": true,
     "editor.quickSuggestionsDelay": 0,
     "editor.inlineSuggest.enabled": true,
+    "github.copilot.editor.enableAutoCompletions": true,
     "github.copilot.enable": {
         "*": true,
         "plaintext": "true",
