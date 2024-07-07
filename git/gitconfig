@@ -21,13 +21,14 @@
 	dag = log --decorate --abbrev-commit --graph
 
 	# show current author
-	author = "![ -n \"$(git config user.name)\" ] \
-			&& [ -n \"$(git config user.email)\" ] \
-			&& printf '%s <%s>\n' \"$(git config user.name)\" \"$(git config user.email)\" \
-			|| (echo 'git: author identity unknown' && exit 1)"
+	author = !"[ -n \"$(git config user.name)\" ] && [ -n \"$(git config user.email)\" ] \
+		&& printf '%s <%s>\n' \"$(git config user.name)\" \"$(git config user.email)\" \
+		|| (echo 'git: author identity unknown' && exit 1)"
 
 	# show changes to default branch
-	change = "!git log $(git symbolic-ref --short refs/remotes/origin/HEAD).. --pretty=format:'* %s'"
+	change = !"git change-list && git change-file"
+	change-list = !"git log $(git symbolic-ref --short refs/remotes/origin/HEAD).. --pretty=format:'* %s'"
+	change-file = !"git diff $(git symbolic-ref --short refs/remotes/origin/HEAD)... --name-only --line-prefix='* '"
 
 [gpg]
 	format = ssh
