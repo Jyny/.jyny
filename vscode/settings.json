@@ -45,4 +45,5 @@
     "makefile.configureOnOpen": false,
     "githubPullRequests.pullBranch": "never",
     "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.activityBar.location": "top",
 }
