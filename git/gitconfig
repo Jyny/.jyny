@@ -20,6 +20,9 @@
 	# show graph log
 	dag = log --decorate --abbrev-commit --graph
 
+	# update remote and prune
+	sync = remote update --prune
+
 	# show current author
 	author = !"[ -n \"$(git config user.name)\" ] && [ -n \"$(git config user.email)\" ] \
 		&& printf '%s <%s>\n' \"$(git config user.name)\" \"$(git config user.email)\" \
