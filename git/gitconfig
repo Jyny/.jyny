@@ -28,10 +28,10 @@
 		&& printf '%s <%s>\n' \"$(git config user.name)\" \"$(git config user.email)\" \
 		|| (echo 'git: author identity unknown' && exit 1)"
 
-	# show changes to default branch
-	change = !"git change-list && git change-file"
-	change-list = !"git log $(git symbolic-ref --short refs/remotes/origin/HEAD).. --pretty=format:'* %s'"
-	change-file = !"git diff $(git symbolic-ref --short refs/remotes/origin/HEAD)... --name-only --line-prefix='* '"
+	# show changes to a target branch
+	change = "!f() { git change-list $1 && git change-file $1; }; f"
+	change-list = "!f() { git log --pretty=format:'* %s' $1..; }; f"
+	change-file = "!f() { git diff --line-prefix='* ' --name-only $1..; }; f"
 
 [gpg]
 	format = ssh
