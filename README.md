@@ -30,3 +30,6 @@
 
 	cat ~/.jyny/vscode/extensions.list | xargs -L 1 code --install-extension
 	cat ~/.jyny/vscode/extensions.list | % { "code --install-extension $_" }
+
+## zed
+	ln -s ~/.jyny/zed/settings.json ~/.config/zed/settings.json
