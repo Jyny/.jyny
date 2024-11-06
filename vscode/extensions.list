@@ -1,10 +1,9 @@
 bazelbuild.vscode-bazel
 bradlc.vscode-tailwindcss
 bufbuild.vscode-buf
-casbin.vscode-casbin
+charliermarsh.ruff
 dbaeumer.vscode-eslint
 eamodio.gitlens
-editorconfig.editorconfig
 github.copilot
 github.copilot-chat
 github.remotehub
@@ -17,10 +16,7 @@ hashicorp.terraform
 mesonbuild.mesonbuild
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
-ms-python.autopep8
 ms-python.debugpy
-ms-python.flake8
-ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
 ms-vscode-remote.remote-ssh
@@ -33,7 +29,10 @@ ms-vscode.hexeditor
 ms-vscode.makefile-tools
 ms-vscode.remote-explorer
 ms-vscode.remote-repositories
+ms-vscode.vscode-serial-monitor
 pbkit.vscode-pbkit
+redhat.ansible
+redhat.fabric8-analytics
 redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
