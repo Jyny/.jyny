@@ -6,9 +6,7 @@ dbaeumer.vscode-eslint
 eamodio.gitlens
 github.copilot
 github.copilot-chat
-github.remotehub
 github.vscode-github-actions
-github.vscode-pull-request-github
 gitlab.gitlab-workflow
 golang.go
 hashicorp.hcl
@@ -28,7 +26,6 @@ ms-vscode.cpptools-themes
 ms-vscode.hexeditor
 ms-vscode.makefile-tools
 ms-vscode.remote-explorer
-ms-vscode.remote-repositories
 ms-vscode.vscode-serial-monitor
 pbkit.vscode-pbkit
 redhat.ansible
