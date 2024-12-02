@@ -46,4 +46,16 @@
     "githubPullRequests.pullBranch": "never",
     "github.copilot.editor.enableAutoCompletions": true,
     "workbench.activityBar.location": "top",
+    "gitlens.views.scm.grouped.views": {
+        "commits": true,
+        "branches": true,
+        "remotes": true,
+        "stashes": true,
+        "tags": true,
+        "worktrees": false,
+        "contributors": true,
+        "repositories": true,
+        "searchAndCompare": true,
+        "launchpad": false
+    },
 }
