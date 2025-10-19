@@ -132,4 +132,4 @@ function jtmux() {
 }
 
 # manage ssh-agent and gpg-agent
-eval `keychain --quiet --eval --inherit any-once`
+eval `keychain --quiet --eval`
