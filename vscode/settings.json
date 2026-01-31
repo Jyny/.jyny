@@ -10,7 +10,8 @@
     "workbench.startupEditor": "none",
     "window.confirmBeforeClose": "keyboardOnly",
     "extensions.ignoreRecommendations": true,
-    
+    "terminal.integrated.stickyScroll.enabled": false,
+
     // sync
     "settingsSync.ignoredExtensions": [],
     "settingsSync.ignoredSettings": [],
@@ -19,7 +20,7 @@
     "diffEditor.renderSideBySide": false,
     "editor.cursorBlinking": "smooth",
     "editor.accessibilitySupport": "off",
-    
+
     // completion
     "editor.suggest.preview": true,
     "editor.quickSuggestionsDelay": 0,
