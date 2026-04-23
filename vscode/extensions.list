@@ -1,14 +1,14 @@
+anthropic.claude-code
 bazelbuild.vscode-bazel
 bradlc.vscode-tailwindcss
 bufbuild.vscode-buf
 charliermarsh.ruff
 dbaeumer.vscode-eslint
 eamodio.gitlens
-github.copilot
-github.copilot-chat
 github.vscode-github-actions
 gitlab.gitlab-workflow
 golang.go
+google.geminicodeassist
 hashicorp.hcl
 hashicorp.terraform
 mesonbuild.mesonbuild
@@ -21,6 +21,7 @@ ms-python.vscode-python-envs
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
 ms-vscode.cmake-tools
+ms-vscode.cpp-devtools
 ms-vscode.cpptools
 ms-vscode.cpptools-extension-pack
 ms-vscode.cpptools-themes
@@ -28,6 +29,7 @@ ms-vscode.hexeditor
 ms-vscode.makefile-tools
 ms-vscode.remote-explorer
 ms-vscode.vscode-serial-monitor
+openai.chatgpt
 pbkit.vscode-pbkit
 redhat.ansible
 redhat.fabric8-analytics

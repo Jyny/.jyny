@@ -1,4 +1,5 @@
 {
+    "workbench.colorTheme": "Dark Modern",
     // remote host
     "remote.SSH.remotePlatform": {
         "wx": "windows",
