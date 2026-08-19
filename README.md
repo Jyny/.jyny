@@ -4,7 +4,7 @@
 
 	brew install stow
 	cd ~/.jyny
-	stow --ignore=gituser --ignore=vimrc_with_vundle git vim tmux zsh htop zed
+	stow --ignore=gituser --ignore=vimrc_with_vundle git vim tmux zsh htop zed claude
 
 ## git settings
 
@@ -49,3 +49,8 @@
 ## zed
 
 	ln -s ~/.jyny/zed/.config/zed/settings.json ~/.config/zed/settings.json
+
+## claude
+
+	ln -s ~/.jyny/claude/.claude/CLAUDE.md ~/.claude/CLAUDE.md
+	ln -s ~/.jyny/claude/.claude/settings.json ~/.claude/settings.json
