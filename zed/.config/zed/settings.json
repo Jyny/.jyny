@@ -9,6 +9,7 @@
 {
   "theme": "One Light",
   "soft_wrap": "editor_width",
+  "disable_ai": true,
   "telemetry": {
     "metrics": false,
     "diagnostics": false,
