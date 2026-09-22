@@ -11,3 +11,4 @@ desktop.ini
 # Temporary files #
 *~
 *#
+**/.claude/settings.local.json
