@@ -100,8 +100,7 @@ export GOPATH="$HOME/.go"
 # export PATH="$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:$HOME/.cargo/bin"
-export PATH="$PATH:$HOME/.krew/bin"
+export PATH="$PATH:/opt/homebrew/opt/rustup/bin"
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
