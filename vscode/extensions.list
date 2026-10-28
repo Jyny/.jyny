@@ -3,7 +3,6 @@ bradlc.vscode-tailwindcss
 bufbuild.vscode-buf
 charliermarsh.ruff
 dbaeumer.vscode-eslint
-eamodio.gitlens
 github.vscode-github-actions
 gitlab.gitlab-workflow
 golang.go

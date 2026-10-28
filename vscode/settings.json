@@ -1,5 +1,7 @@
 {
     "workbench.colorTheme": "Dark Modern",
+    "workbench.activityBar.location": "top",
+
     // remote host
     "remote.SSH.remotePlatform": {
         "wx": "windows",
@@ -9,9 +11,14 @@
     // behavior
     "security.workspace.trust.startupPrompt": "never",
     "workbench.startupEditor": "none",
+    "workbench.browser.showInTitleBar": false,
+    "git.blame.editorDecoration.enabled": true,
     "window.confirmBeforeClose": "keyboardOnly",
     "extensions.ignoreRecommendations": true,
     "terminal.integrated.stickyScroll.enabled": false,
+    "chat.titleBar.openInAgentsWindow.enabled": false,
+    "makefile.configureOnOpen": false,
+    "githubPullRequests.pullBranch": "never",
 
     // sync
     "settingsSync.ignoredExtensions": [],
@@ -43,24 +50,8 @@
     // telemetry
     "redhat.telemetry.enabled": false,
     "telemetry.telemetryLevel": "off",
-    "gitlens.telemetry.enabled": false,
 
     // others
-    "makefile.configureOnOpen": false,
-    "githubPullRequests.pullBranch": "never",
-    "workbench.activityBar.location": "top",
-    "gitlens.views.scm.grouped.views": {
-        "commits": true,
-        "branches": true,
-        "remotes": true,
-        "stashes": true,
-        "tags": true,
-        "worktrees": false,
-        "contributors": true,
-        "repositories": true,
-        "searchAndCompare": true,
-        "launchpad": false
-    },
     "yaml.disableSchemaDetection": [
         "**/.github/workflows/*.yml",
         "**/.github/workflows/*.yaml",
