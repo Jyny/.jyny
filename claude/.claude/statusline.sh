@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Claude Code status line: https://code.claude.com/docs/en/statusline
 #   dir | branch[*!] | wt:name[<-orig] | session
-#   model | ctx N% | 5h N% 7d N% | cache N% warm|cold [N miss]
+#   model | ctx N% | 5h N%/T% 7d N%/T% | cache N% warm|cold [N miss]
+#   (N = used, T = window time elapsed)
 # Requires bash 3.2+, jq 1.6+, git.
 
 readonly NAME_MAX=40   # max chars for session / worktree names
@@ -34,6 +35,11 @@ render() {
       # "name N%"; bad: 0-100, higher is worse
       def gauge(name; bad): values | round | bad as $b
         | "\(name) " + ("\(.)%" | c(if $b >= 80 then $C.crit elif $b >= 50 then $C.warn else $C.ok end));
+      # "name N%/T%": used gauge + share of the window already elapsed
+      def limit(name; secs): values | select(.used_percentage != null)
+        | (.used_percentage | gauge(name; .))
+          + ((.resets_at | numbers | (secs - (. - now)) / secs * 100
+              | [., 0] | max | [., 100] | min | round | "/\(.)%" | c($C.sep)) // "");
 
     # Schema: every field the status line reads
     { dir:   $dir,
@@ -43,8 +49,8 @@ render() {
       name:  .session_name,
       model: .model.display_name,
       ctx:   .context_window.used_percentage,
-      h5:    .rate_limits.five_hour.used_percentage,
-      d7:    .rate_limits.seven_day.used_percentage,
+      h5:    .rate_limits.five_hour,
+      d7:    .rate_limits.seven_day,
       cache: (.prompt_cache | if .caching_observed == false then null else . end) }
 
     # Render: absent (null) fields drop out via `values`
@@ -58,7 +64,7 @@ render() {
 
       ([ (.model | values | clean | c($C.model)),
          (.ctx | gauge("ctx"; .)),
-         ([(.h5 | gauge("5h"; .)), (.d7 | gauge("7d"; .))] | select(length > 0) | join(" ")),
+         ([(.h5 | limit("5h"; 5 * 3600)), (.d7 | limit("7d"; 7 * 86400))] | select(length > 0) | join(" ")),
          (.cache | values
            | [ ((.hit_ratio | values | . * 100 | gauge("cache"; 100 - .)) // "cache"),   # high hit = good
                (if .warm then "warm" | c($C.ok) else "cold" | c($C.cold) end),
