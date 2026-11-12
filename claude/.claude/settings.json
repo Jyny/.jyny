@@ -8,5 +8,10 @@
       "Bash(git commit)",
       "Bash(git commit:*)"
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh",
+    "refreshInterval": 10
   }
 }
